@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6323CCBD299E924600DB3EFB /* LongTapPressGesture_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323CCBC299E924600DB3EFB /* LongTapPressGesture_.swift */; };
+		6323CCBF299EA4F300DB3EFB /* MagnificationGesture_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323CCBE299EA4F300DB3EFB /* MagnificationGesture_.swift */; };
+		6323CCC1299ED32700DB3EFB /* RotationGesture_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323CCC0299ED32700DB3EFB /* RotationGesture_.swift */; };
+		6323CCC3299ED91C00DB3EFB /* DragGesture_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323CCC2299ED91B00DB3EFB /* DragGesture_.swift */; };
+		6334893B29A645F100DCB907 /* StarRatingMask_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334893A29A645F100DCB907 /* StarRatingMask_.swift */; };
+		6334893D29A65B9900DCB907 /* SoundEffects_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334893C29A65B9900DCB907 /* SoundEffects_.swift */; };
+		6334893F29A6633D00DCB907 /* tiny_bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6334893E29A6633C00DCB907 /* tiny_bell.mp3 */; };
+		6334894129A664B900DCB907 /* bell_rings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6334894029A664B900DCB907 /* bell_rings.mp3 */; };
+		6334894429A6737700DCB907 /* Haptics_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334894329A6737700DCB907 /* Haptics_.swift */; };
+		6334894629A67AE500DCB907 /* LocalNotification_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6334894529A67AE500DCB907 /* LocalNotification_.swift */; };
 		634BE4F3299415990051D069 /* Shapes_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634BE4F2299415990051D069 /* Shapes_.swift */; };
 		634BE4F529941E660051D069 /* Color_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634BE4F429941E660051D069 /* Color_.swift */; };
 		634BE4F7299448C00051D069 /* Gradients_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634BE4F6299448C00051D069 /* Gradients_.swift */; };
@@ -33,6 +43,8 @@
 		635EEDDC2999306700017267 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635EEDD92999306700017267 /* ProfileView.swift */; };
 		635EEDDD2999306700017267 /* OnboardingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635EEDDA2999306700017267 /* OnboardingContainer.swift */; };
 		635EEDE029994F2400017267 /* SystemMaterials_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635EEDDF29994F2400017267 /* SystemMaterials_.swift */; };
+		63743DCC299FD02B0023E080 /* ScrollViewReader_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63743DCB299FD02B0023E080 /* ScrollViewReader_.swift */; };
+		63743DCE299FDC8E0023E080 /* GeometryReader_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63743DCD299FDC8E0023E080 /* GeometryReader_.swift */; };
 		638CEEC52996BE5B00C813D2 /* Animation_Timing_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638CEEC42996BE5B00C813D2 /* Animation_Timing_.swift */; };
 		638CEEC72996F7F600C813D2 /* Transition_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638CEEC62996F7F500C813D2 /* Transition_.swift */; };
 		638CEEC92996FB2500C813D2 /* Sheet_FullScreenCover_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638CEEC82996FB2500C813D2 /* Sheet_FullScreenCover_.swift */; };
@@ -73,6 +85,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6323CCBC299E924600DB3EFB /* LongTapPressGesture_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongTapPressGesture_.swift; sourceTree = "<group>"; };
+		6323CCBE299EA4F300DB3EFB /* MagnificationGesture_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGesture_.swift; sourceTree = "<group>"; };
+		6323CCC0299ED32700DB3EFB /* RotationGesture_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGesture_.swift; sourceTree = "<group>"; };
+		6323CCC2299ED91B00DB3EFB /* DragGesture_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGesture_.swift; sourceTree = "<group>"; };
+		6334893A29A645F100DCB907 /* StarRatingMask_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingMask_.swift; sourceTree = "<group>"; };
+		6334893C29A65B9900DCB907 /* SoundEffects_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffects_.swift; sourceTree = "<group>"; };
+		6334893E29A6633C00DCB907 /* tiny_bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tiny_bell.mp3; sourceTree = "<group>"; };
+		6334894029A664B900DCB907 /* bell_rings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell_rings.mp3; sourceTree = "<group>"; };
+		6334894329A6737700DCB907 /* Haptics_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics_.swift; sourceTree = "<group>"; };
+		6334894529A67AE500DCB907 /* LocalNotification_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification_.swift; sourceTree = "<group>"; };
 		634BE4F2299415990051D069 /* Shapes_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes_.swift; sourceTree = "<group>"; };
 		634BE4F429941E660051D069 /* Color_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_.swift; sourceTree = "<group>"; };
 		634BE4F6299448C00051D069 /* Gradients_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients_.swift; sourceTree = "<group>"; };
@@ -99,6 +121,8 @@
 		635EEDD92999306700017267 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		635EEDDA2999306700017267 /* OnboardingContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContainer.swift; sourceTree = "<group>"; };
 		635EEDDF29994F2400017267 /* SystemMaterials_.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemMaterials_.swift; sourceTree = "<group>"; };
+		63743DCB299FD02B0023E080 /* ScrollViewReader_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReader_.swift; sourceTree = "<group>"; };
+		63743DCD299FDC8E0023E080 /* GeometryReader_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader_.swift; sourceTree = "<group>"; };
 		638CEEC42996BE5B00C813D2 /* Animation_Timing_.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation_Timing_.swift; sourceTree = "<group>"; };
 		638CEEC62996F7F500C813D2 /* Transition_.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition_.swift; sourceTree = "<group>"; };
 		638CEEC82996FB2500C813D2 /* Sheet_FullScreenCover_.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sheet_FullScreenCover_.swift; sourceTree = "<group>"; };
@@ -151,6 +175,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6323CCBB299E8D0700DB3EFB /* SwiftUI Intermediate Level */ = {
+			isa = PBXGroup;
+			children = (
+				6323CCBC299E924600DB3EFB /* LongTapPressGesture_.swift */,
+				6323CCBE299EA4F300DB3EFB /* MagnificationGesture_.swift */,
+				6323CCC0299ED32700DB3EFB /* RotationGesture_.swift */,
+				6323CCC2299ED91B00DB3EFB /* DragGesture_.swift */,
+				63743DCB299FD02B0023E080 /* ScrollViewReader_.swift */,
+				63743DCD299FDC8E0023E080 /* GeometryReader_.swift */,
+				6334893A29A645F100DCB907 /* StarRatingMask_.swift */,
+				6334893C29A65B9900DCB907 /* SoundEffects_.swift */,
+				6334894329A6737700DCB907 /* Haptics_.swift */,
+				6334894529A67AE500DCB907 /* LocalNotification_.swift */,
+			);
+			path = "SwiftUI Intermediate Level";
+			sourceTree = "<group>";
+		};
+		6334894229A664F000DCB907 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6334894029A664B900DCB907 /* bell_rings.mp3 */,
+				6334893E29A6633C00DCB907 /* tiny_bell.mp3 */,
+			);
+			name = Sounds;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		634BE5002994C7A90051D069 /* MAIN→ */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,7 +347,9 @@
 				634BE5002994C7A90051D069 /* MAIN→ */,
 				63B0DC16299A404D00EEAF69 /* SwiftUI Tutorial */,
 				63B0DC18299A4ABB00EEAF69 /* TODO LIST APP MVVM */,
+				6323CCBB299E8D0700DB3EFB /* SwiftUI Intermediate Level */,
 				63DFAFA329940902007AA167 /* Assets.xcassets */,
+				6334894229A664F000DCB907 /* Sounds */,
 				63DFAFA529940902007AA167 /* Preview Content */,
 			);
 			path = SwiftUI_Elements_Templates;
@@ -369,8 +422,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E13287299D47A600050388 /* LaunchScreen.storyboard in Resources */,
+				6334893F29A6633D00DCB907 /* tiny_bell.mp3 in Resources */,
 				63DFAFA729940902007AA167 /* Preview Assets.xcassets in Resources */,
 				63DFAFA429940902007AA167 /* Assets.xcassets in Resources */,
+				6334894129A664B900DCB907 /* bell_rings.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,12 +442,15 @@
 				635B3BFB299BD4C800AB8A43 /* ListViewModel.swift in Sources */,
 				635EEDC7299922BB00017267 /* Markups_Doc_.swift in Sources */,
 				634BE4F7299448C00051D069 /* Gradients_.swift in Sources */,
+				6334893D29A65B9900DCB907 /* SoundEffects_.swift in Sources */,
 				635EEDDC2999306700017267 /* ProfileView.swift in Sources */,
 				635EEDD12999294500017267 /* EnvironmentObject_.swift in Sources */,
 				63B0DC11299A1E7A00EEAF69 /* SwipeActions_.swift in Sources */,
 				63B0DC13299A3EF500EEAF69 /* FocusState_.swift in Sources */,
 				638CEEE12997DA6900C813D2 /* DatePicker_.swift in Sources */,
 				635EEDC9299924D800017267 /* OnAppear_OnDisappear_.swift in Sources */,
+				6334893B29A645F100DCB907 /* StarRatingMask_.swift in Sources */,
+				6334894629A67AE500DCB907 /* LocalNotification_.swift in Sources */,
 				634BE4F92994545D0051D069 /* Image_.swift in Sources */,
 				63B0DC0D299A193900EEAF69 /* ButtonStyle_.swift in Sources */,
 				63E13285299D0E4E00050388 /* NoItemsView.swift in Sources */,
@@ -406,6 +464,8 @@
 				635EEDC12999209600017267 /* Slider_.swift in Sources */,
 				634BE4FF2994C7910051D069 /* Stack_.swift in Sources */,
 				638CEEDF2997D99200C813D2 /* ColorPicker_.swift in Sources */,
+				6323CCBD299E924600DB3EFB /* LongTapPressGesture_.swift in Sources */,
+				63743DCE299FDC8E0023E080 /* GeometryReader_.swift in Sources */,
 				635EEDD72999304200017267 /* AsyncImage_.swift in Sources */,
 				638CEEDD2997D90F00C813D2 /* PIcker_.swift in Sources */,
 				63DFAFA2299408FE007AA167 /* Text_.swift in Sources */,
@@ -419,18 +479,23 @@
 				638CEEDB2997D06D00C813D2 /* Toggle_.swift in Sources */,
 				638CEECD2997974A00C813D2 /* NavigationView_.swift in Sources */,
 				635EEDDB2999306700017267 /* OnboardingViews.swift in Sources */,
+				6323CCBF299EA4F300DB3EFB /* MagnificationGesture_.swift in Sources */,
 				63C0DBA02996AD52001439B6 /* ExtractFunctions_.swift in Sources */,
+				6323CCC3299ED91C00DB3EFB /* DragGesture_.swift in Sources */,
 				63DA6D06299508620084AFF5 /* Button_.swift in Sources */,
+				6323CCC1299ED32700DB3EFB /* RotationGesture_.swift in Sources */,
 				63DA6D0829950DF60084AFF5 /* State_.swift in Sources */,
 				634BE4F3299415990051D069 /* Shapes_.swift in Sources */,
 				635EEDC32999226100017267 /* TabView_.swift in Sources */,
 				638CEECF29979C3D00C813D2 /* List_.swift in Sources */,
 				634BE4FB29945C070051D069 /* Frame_.swift in Sources */,
 				635EEDCB2999253400017267 /* TapGesture_.swift in Sources */,
+				6334894429A6737700DCB907 /* Haptics_.swift in Sources */,
 				63B0DC1D299A4E7600EEAF69 /* ListRowView.swift in Sources */,
 				634BE5042994DAC10051D069 /* LazyVGrid_.swift in Sources */,
 				635EEDE029994F2400017267 /* SystemMaterials_.swift in Sources */,
 				63DA6D042995046B0084AFF5 /* SafeAria_.swift in Sources */,
+				63743DCC299FD02B0023E080 /* ScrollViewReader_.swift in Sources */,
 				635EEDCF2999278000017267 /* ObservableObject_.swift in Sources */,
 				635EEDC52999229800017267 /* DarkMode_.swift in Sources */,
 				638CEECB299782FF00C813D2 /* Sheet_Transition_Animation_.swift in Sources */,

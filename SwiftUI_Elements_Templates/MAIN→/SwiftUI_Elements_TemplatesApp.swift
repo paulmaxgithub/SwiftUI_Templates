@@ -11,17 +11,21 @@ import SwiftUI
 struct SwiftUI_Elements_TemplatesApp: App {
     
     //MARK: - TODO LIST APP MVVM
-    @StateObject var listViewModel = ListViewModel()
+//    @StateObject var listViewModel = ListViewModel()
     
     var body: some Scene {
         WindowGroup {
             //MARK: - TODO LIST APP MVVM
-            NavigationView {
-                ListView()
-            }
-            /// for iPad presentation
-            .navigationViewStyle(.stack)
-            .environmentObject(listViewModel)
+//            NavigationView {
+//                ListView()
+//            }
+//            /// for iPad presentation
+//            .navigationViewStyle(.stack)
+//            .environmentObject(listViewModel)
+            
+//            SwipeGesture()
+//            ScrollViewReader_()
+            LocalNotification_()
         }
     }
 }

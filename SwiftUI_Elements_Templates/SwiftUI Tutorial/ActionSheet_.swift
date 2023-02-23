@@ -20,7 +20,7 @@ struct ActionSheet_: View {
         
         VStack {
             HStack {
-                Image("Button_ON")
+                Image("G_png")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30, height: 30)

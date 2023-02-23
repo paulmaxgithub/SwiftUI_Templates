@@ -59,7 +59,7 @@ struct Stepper__Previews: PreviewProvider {
     }
 }
 
-class Haptics {
+fileprivate class Haptics {
     
     static let shared = Haptics()
     
