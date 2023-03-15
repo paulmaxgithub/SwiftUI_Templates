@@ -11,6 +11,8 @@ import CoreLocation
 
 fileprivate class NotificationManager {
     
+    enum NotificationTrigger { case time, calendar, location }
+    
     static let instance = NotificationManager()
     
     func requestAuthorization() {
@@ -28,7 +30,7 @@ fileprivate class NotificationManager {
             }
     }
     
-    public func scheduleNotification() {
+    public func scheduleNotification(by trigger: NotificationTrigger) {
         let content = UNMutableNotificationContent()
         content.title = "First Notification))"
         content.subtitle = "Subtitle Info"
@@ -49,8 +51,15 @@ fileprivate class NotificationManager {
         region.notifyOnExit = false
         let locationTrigger = UNLocationNotificationTrigger(region: region, repeats: true)
         
+        let selectedTriggger: UNNotificationTrigger
+        switch trigger {
+        case .time:     selectedTriggger = timeTrigger
+        case .calendar: selectedTriggger = calendarTrigger
+        case .location: selectedTriggger = locationTrigger
+        }
+
         let request = UNNotificationRequest(
-            identifier: UUID().uuidString, content: content, trigger: timeTrigger)
+            identifier: UUID().uuidString, content: content, trigger: selectedTriggger)
         
         UNUserNotificationCenter.current().add(request)
     }
@@ -67,13 +76,22 @@ struct LocalNotification_: View {
             Button("Request permission") {
                 NotificationManager.instance.requestAuthorization()
             }.buttonStyle(.borderedProminent)
-            Button("Schedule notification") {
-                NotificationManager.instance.scheduleNotification()
-            }.buttonStyle(.borderedProminent)
             Button("Cancel notification") {
                 NotificationManager.instance.cancelNotification()
             }.buttonStyle(.borderedProminent)
-        }
+            
+            Divider()
+            
+            Button("Schedule notification by time") {
+                NotificationManager.instance.scheduleNotification(by: .time)
+            }.buttonStyle(.borderedProminent)
+            Button("Schedule notification by calendar") {
+                NotificationManager.instance.scheduleNotification(by: .calendar)
+            }.buttonStyle(.borderedProminent)
+            Button("Schedule notification by location") {
+                NotificationManager.instance.scheduleNotification(by: .location)
+            }.buttonStyle(.borderedProminent)
+                    }
         .onAppear {
             UIApplication.shared.applicationIconBadgeNumber = 0
         }
