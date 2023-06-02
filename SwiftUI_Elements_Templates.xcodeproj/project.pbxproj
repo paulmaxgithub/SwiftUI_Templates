@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630260002A24BA4700AC066B /* Animation_Text_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63025FFF2A24BA4700AC066B /* Animation_Text_.swift */; };
 		6323CCBD299E924600DB3EFB /* LongTapPressGesture_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323CCBC299E924600DB3EFB /* LongTapPressGesture_.swift */; };
 		6323CCBF299EA4F300DB3EFB /* MagnificationGesture_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323CCBE299EA4F300DB3EFB /* MagnificationGesture_.swift */; };
 		6323CCC1299ED32700DB3EFB /* RotationGesture_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6323CCC0299ED32700DB3EFB /* RotationGesture_.swift */; };
@@ -127,6 +128,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63025FFF2A24BA4700AC066B /* Animation_Text_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation_Text_.swift; sourceTree = "<group>"; };
 		6323CCBC299E924600DB3EFB /* LongTapPressGesture_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongTapPressGesture_.swift; sourceTree = "<group>"; };
 		6323CCBE299EA4F300DB3EFB /* MagnificationGesture_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGesture_.swift; sourceTree = "<group>"; };
 		6323CCC0299ED32700DB3EFB /* RotationGesture_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGesture_.swift; sourceTree = "<group>"; };
@@ -472,6 +474,7 @@
 				63C0DBA22996B034001439B6 /* Binding_.swift */,
 				63C0DBA42996B0F0001439B6 /* WithAnimation_.swift */,
 				638CEEC42996BE5B00C813D2 /* Animation_Timing_.swift */,
+				63025FFF2A24BA4700AC066B /* Animation_Text_.swift */,
 				638CEEC62996F7F500C813D2 /* Transition_.swift */,
 				638CEEC82996FB2500C813D2 /* Sheet_FullScreenCover_.swift */,
 				638CEECA299782FE00C813D2 /* Sheet_Transition_Animation_.swift */,
@@ -971,6 +974,7 @@
 				6334894829A7686A00DCB907 /* Hashable_.swift in Sources */,
 				638CEED92997C50700C813D2 /* TextEditor_.swift in Sources */,
 				638CEED32997AA5A00C813D2 /* ActionSheet_.swift in Sources */,
+				630260002A24BA4700AC066B /* Animation_Text_.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
