@@ -76,6 +76,8 @@ struct NewScreen: View {
                     .font(.title)
             }
             .padding(20)
+            
+            TextField_()
         }
     }
 }

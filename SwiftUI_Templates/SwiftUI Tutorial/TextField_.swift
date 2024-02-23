@@ -16,9 +16,7 @@ struct TextField_: View {
         NavigationView {
             VStack {
                 TextField("Type Something Here...", text: $txtFieldText)
-                    .padding()
-                    .textFieldStyle(PlainTextFieldStyle())
-                    .background(Color.gray.opacity(0.3).cornerRadius(10))
+                    .modifier(TextField_DecimalPad_Modifier())
                 
                 Button {
                     if textIsAppropriate() { saveText() }
@@ -31,7 +29,7 @@ struct TextField_: View {
                         .background(textIsAppropriate() ? .blue : .gray)
                         .cornerRadius(10)
                 }
-//                .allowsHitTesting(textIsAppropriate())
+                //                .allowsHitTesting(textIsAppropriate())
                 .disabled(!textIsAppropriate())
                 
                 ForEach(dataArray, id: \.self) { data in
@@ -57,3 +55,37 @@ struct TextField_: View {
 #if DEBUG
 struct TextField__Previews: PreviewProvider { static var previews: some View { TextField_() } }
 #endif
+
+struct TextField_DecimalPad_Modifier: ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.headline)
+        //.frame(width: size.width, height: size.height)
+            .multilineTextAlignment(.center)
+            .keyboardType(.decimalPad)
+//            .submitLabel(.return)
+            .padding()
+        //.textFieldStyle(PlainTextFieldStyle())
+        //.background(Color.gray.opacity(0.3).cornerRadius(10))
+            .background(RoundedRectangle(cornerRadius: 10).fill(.white))
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button {
+                        UIApplication.shared.endEditing()
+                    } label: {
+                        Text("ENTER")
+                            .font(.headline)
+                    }
+                }
+            }
+    }
+}
+
+extension UIApplication {
+    /// Dismisses the keyboard
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1320"
+   LastUpgradeVersion = "1520"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "63DFAF9B299408FE007AA167"
-               BuildableName = "SwiftUI_Elements_Templates.app"
-               BlueprintName = "SwiftUI_Elements_Templates"
-               ReferencedContainer = "container:SwiftUI_Elements_Templates.xcodeproj">
+               BlueprintIdentifier = "6344F37629AE58920097FBE9"
+               BuildableName = "CoreData_.app"
+               BlueprintName = "CoreData_"
+               ReferencedContainer = "container:SwiftUI_Templates.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "63DFAF9B299408FE007AA167"
-            BuildableName = "SwiftUI_Elements_Templates.app"
-            BlueprintName = "SwiftUI_Elements_Templates"
-            ReferencedContainer = "container:SwiftUI_Elements_Templates.xcodeproj">
+            BlueprintIdentifier = "6344F37629AE58920097FBE9"
+            BuildableName = "CoreData_.app"
+            BlueprintName = "CoreData_"
+            ReferencedContainer = "container:SwiftUI_Templates.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -67,10 +67,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "63DFAF9B299408FE007AA167"
-            BuildableName = "SwiftUI_Elements_Templates.app"
-            BlueprintName = "SwiftUI_Elements_Templates"
-            ReferencedContainer = "container:SwiftUI_Elements_Templates.xcodeproj">
+            BlueprintIdentifier = "6344F37629AE58920097FBE9"
+            BuildableName = "CoreData_.app"
+            BlueprintName = "CoreData_"
+            ReferencedContainer = "container:SwiftUI_Templates.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

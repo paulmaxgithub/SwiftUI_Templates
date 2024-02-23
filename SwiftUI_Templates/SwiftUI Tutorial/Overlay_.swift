@@ -9,21 +9,20 @@ import SwiftUI
 
 struct Overlay_: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 40) {
             //
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                .frame(width: 100, height: 100, alignment: .center)
+                .font(.callout)
+                .frame(width: 90, height: 90, alignment: .center)
                 .background(
-                    //                LinearGradient(gradient: Gradient(colors: [.red, .white]),
-                    //                               startPoint: .trailing, endPoint: .leading)
-                    
+                    //LinearGradient(gradient: Gradient(colors: [.red, .white]),
+                    //startPoint: .trailing, endPoint: .leading)
                     Circle().fill(.blue)
                 )
-                .frame(width: 150, height: 150, alignment: .center)
+                .frame(width: 120, height: 120, alignment: .center)
                 .background(
                     Circle().fill(.red)
                 )
-                .padding()
             
             //
             Circle()
@@ -41,24 +40,22 @@ struct Overlay_: View {
                         .fill(.purple)
                         .frame(width: 110, height: 110, alignment: .center)
                 )
-                .padding()
             
             //
             Rectangle()
-                .frame(width: 100, height: 100)
+                .frame(width: 80, height: 80)
                 .overlay(
                     Rectangle()
                         .fill(.red)
-                        .frame(width: 50, height: 50)
+                        .frame(width: 30, height: 30)
                     , alignment: .center
                 )
                 .background(
                     Rectangle()
                         .fill(.yellow)
-                        .frame(width: 150, height: 150)
+                        .frame(width: 120, height: 120)
                     , alignment: .center
                 )
-                .padding(40)
             
             //
             Image(systemName: "heart.fill")
@@ -81,11 +78,27 @@ struct Overlay_: View {
                                         .font(.headline)
                                         .foregroundColor(.white)
                                 )
-//                                .shadow(color: .gray, radius: 10, x: 5, y: 5)
+                            //.shadow(color: .gray, radius: 10, x: 5, y: 5)
                             , alignment: .topTrailing
                         )
                 )
-                .padding(40)
+                .padding()
+            
+            //
+            Circle()
+                .frame(width: 30, height: 30, alignment: .center)
+                .padding()
+                .overlay(
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 20) // shadow layer
+                            .shadow(color: Color.blue.opacity(1), radius: 3, x: 3, y: 3)
+                        RoundedRectangle(cornerRadius: 20) // mask layer
+                            .blendMode(.destinationOut)
+                        RoundedRectangle(cornerRadius: 20) // stroke layer
+                            .strokeBorder(Color.primary, lineWidth: 2)
+                    }
+                        .compositingGroup()
+                )
         }
     }
 }
